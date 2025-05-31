@@ -1,7 +1,6 @@
+# Wiki Films – Plateforme Collaborative Cinéma
 
-# 🎬 Wiki Films – Plateforme Collaborative Cinéma
-
-> Une application Laravel en architecture MVC permettant la consultation et l’enrichissement collaboratif de fiches d’acteurs et de films.
+> Une application web personnelle construite avec Laravel en architecture MVC, permettant la consultation et l’enrichissement collaboratif de fiches d’acteurs et de films.
 
 <p align="center">
   <!-- Langages et Librairies Web -->
@@ -19,56 +18,56 @@
 
 <h3 align="center">• • •</h3>
 
-## 📌 Présentation du projet
+## À propos du projet
 
-**Wiki Films** est une application web permettant aux utilisateurs de consulter des informations détaillées sur des acteurs et leurs films, et de participer à l’enrichissement de la base de données. Elle a été développée avec **Laravel** en suivant une stricte **architecture MVC**.
+**Wiki Films** est une plateforme web développée dans une démarche personnelle et professionnelle. Elle permet de rechercher, consulter et enrichir des fiches d’acteurs et de films via une interface intuitive. Le projet repose sur le framework **Laravel** avec une structure **MVC propre**, un système d’authentification sécurisé, et une base de données relationnelle.
 
-Ce projet a été conçu pour répondre à des objectifs pédagogiques tout en respectant des standards professionnels de développement web.
+Ce projet démontre ma capacité à concevoir et déployer une application complète en autonomie, en respectant les bonnes pratiques du développement web moderne.
 
----
+<h3 align="center">• • •</h3>
 
-## 🧠 Objectifs pédagogiques
+## Objectifs techniques
 
-- Implémentation de l’architecture MVC avec Laravel
-- Création d’un système de rôles et permissions (Visiteur, Utilisateur, Admin)
-- Gestion sécurisée des formulaires et authentification Laravel
-- Construction d’une base de données relationnelle en MySQL
-- Interface responsive avec Blade et Bootstrap
+- Développer une application complète en Laravel
+- Implémenter un système de rôles (Visiteur, Utilisateur, Admin)
+- Sécuriser les formulaires et l’authentification
+- Gérer dynamiquement une base de données MySQL
+- Construire un front-end responsive avec Blade et Bootstrap
 
----
+<h3 align="center">• • •</h3>
 
-## 🔧 Fonctionnalités principales
+## Fonctionnalités
 
-### 🎥 Visiteur (non connecté)
-- 🔍 Rechercher des acteurs ou des films
-- 👁️ Consulter la fiche d’un acteur
-- 🎬 Consulter les détails d’un film
+### Visiteur (non connecté)
+- Recherche d’acteurs ou de films
+- Consultation des fiches acteurs
+- Visualisation des films associés
 
-### ✍️ Utilisateur enregistré (connecté)
-- ➕ Ajouter de nouveaux acteurs avec biographie et filmographie
-- ➕ Ajouter un film à un acteur existant
+### Utilisateur (connecté)
+- Ajout de nouveaux acteurs avec biographie
+- Ajout de films liés à un acteur existant
 
-### 🛠 Administrateur
-- ✅ Valider ou refuser les contenus ajoutés
-- 🗂 Gérer les utilisateurs (ajouter, modifier, supprimer)
-- 📊 Accéder à un tableau de bord de gestion
+### Administrateur
+- Validation ou refus des contenus proposés
+- Gestion complète des utilisateurs
+- Accès à un tableau de bord dédié
 
----
+<h3 align="center">• • •</h3>
 
-## 🧱 Architecture technique
+## Stack technique
 
-| Composant | Stack |
-|----------|-------|
-| Backend | Laravel 10, PHP |
-| Frontend | Blade, Bootstrap |
-| Base de données | MySQL |
-| Sécurité | Authentification Laravel, rôles/permissions |
+| Élément       | Technologies utilisées               |
+|---------------|--------------------------------------|
+| Backend       | Laravel 10, PHP                      |
+| Frontend      | Blade, Bootstrap                     |
+| Base de données | MySQL                              |
+| Authentification | Laravel Auth, rôles personnalisés  |
 
----
+<h3 align="center">• • •</h3>
 
-## 📂 Structure du projet
+## 📂 Arborescence du projet
 
-```
+<h3 align="center">• • •</h3>
 📁 app/
 📁 resources/views/
 📁 routes/web.php
@@ -78,72 +77,99 @@ Ce projet a été conçu pour répondre à des objectifs pédagogiques tout en r
 composer.json
 ```
 
----
+<h3 align="center">• • •</h3>
 
-## 🚀 Lancer le projet en local
+## Installation locale
 
-1. **Cloner le dépôt**
-   ```bash
-   git clone https://github.com/majoiefaya/Iarravel_streaming_website.git
-   cd Iarravel_streaming_website
-   ```
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/majoiefaya/larravel_streaming_website.git
+cd larravel_streaming_website
 
-2. **Installer les dépendances**
-   ```bash
-   composer install
-   npm install && npm run dev
-   ```
+# 2. Installer les dépendances
+composer install
+npm install && npm run dev
 
-3. **Configurer l'environnement**
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
+# 3. Configurer l’environnement
+cp .env.example .env
+php artisan key:generate
 
-4. **Configurer la base de données**
-   ```bash
-   php artisan migrate --seed
-   ```
+# 4. Créer et remplir la base de données
+php artisan migrate --seed
 
-5. **Démarrer le serveur**
-   ```bash
-   php artisan serve
-   ```
+# 5. Lancer le serveur
+php artisan serve
+```
 
----
+<h3 align="center">• • •</h3>
 
-## 👥 Accès aux rôles
+## Rôles et permissions
 
-| Rôle | Description |
-|------|-------------|
-| Visiteur | Consultation uniquement |
-| Utilisateur | Ajout de contenu |
-| Administrateur | Gestion complète du contenu et des utilisateurs |
+| Rôle         | Droits                               |
+|--------------|---------------------------------------|
+| Visiteur     | Consultation uniquement               |
+| Utilisateur  | Ajout de contenu                      |
+| Administrateur | Gestion de l’ensemble de la plateforme |
 
----
+<h3 align="center">• • •</h3>
 
-## 📸 Captures d’écran *(à ajouter)*
+## Captures d’écran
 
-- [ ] Page d’accueil
-- [ ] Fiche acteur
-- [ ] Détail film
-- [ ] Dashboard admin
 
----
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">Page d’accueil<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/wiki_film_home.png" width="300" alt="wiki_film_home"/>
+      </td>
+      <td align="center">Fiche acteur<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/wiki_film_actor.png" width="300" alt="wiki_film_actor"/>
+      </td>
+      <td align="center">Fiche acteurs<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/wiki_film_actors.png" width="300" alt="wiki_film_actors"/>
+      </td>
+       <td align="center">Liste films<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/wiki_film_films.png" width="300" alt="wiki_film_films"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">Détail film<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/film_details.png" width="300" alt="wiki_film_films"/>
+      </td>
+      <td align="center">Connexion<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/wiki_film_log_in.png" width="300" alt="wiki_film_log_in"/>
+      </td>
+      <td align="center">Inscription<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/inscription_page.png" width="300" alt="inscription_page"/>
+      </td>
+      <td align="center">Filmographie<br/>
+        <img src="https://github.com/majoiefaya/Iarravel_streaming_website/blob/main/assets/images/filmographie.png" width="300" alt="filmographie"/>
+      </td>
+    </tr>
+  </table>
+</p>
+<h3 align="center">• • •</h3>
 
-## 💡 Ce que j’ai appris
+## Compétences développées
 
-- Mettre en œuvre une architecture MVC dans Laravel
-- Créer un système d’authentification robuste avec rôles
-- Organiser un projet web complet de A à Z
-- Déployer une base de données relationnelle
-- Travailler avec Git en environnement versionné
+- Développement fullstack avec Laravel
+- Création de systèmes d’authentification avancés
+- Structuration d’un projet MVC propre
+- Gestion de version (Git) et déploiement local
+- Intégration front-end responsive avec Blade
 
----
+<h3 align="center">• • •</h3>
 
-## 📜 Licence
+## Licence
 
-Ce projet est open-source à but pédagogique.  
-Licence : **MIT**
+Ce projet est open-source, publié sous licence **MIT**.
 
----
+<h3 align="center">• • •</h3>
+
+## ☕ Me soutenir
+
+<p align="center">
+  <a href="https://buymeacoffee.com/majoiefaya" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"/>
+  </a>
+</p>
