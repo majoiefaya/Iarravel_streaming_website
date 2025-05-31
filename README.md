@@ -1,51 +1,149 @@
+
 # 🎬 Wiki Films – Plateforme Collaborative Cinéma
 
-> Un projet Laravel en architecture MVC qui permet de rechercher, consulter et enrichir des fiches d’acteurs et de films.
+> Une application Laravel en architecture MVC permettant la consultation et l’enrichissement collaboratif de fiches d’acteurs et de films.
+
+<p align="center">
+  <!-- Langages et Librairies Web -->
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel"/>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+  <img src="https://img.shields.io/badge/MySQL-00758F?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/Blade-24292E?style=flat-square&logo=laravel&logoColor=white" alt="Blade"/>
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
+  <img src="https://img.shields.io/badge/Architecture-MVC-critical?style=flat-square" alt="MVC"/>
+  <!-- Statut du projet -->
+  <img src="https://img.shields.io/badge/Status-Terminé-brightgreen?style=flat-square" alt="Statut"/>
+  <!-- Licence -->
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License"/>
+</p>
+
+<h3 align="center">• • •</h3>
 
 ## 📌 Présentation du projet
 
-**Wiki Films** est une application web développée avec Laravel, visant à offrir une plateforme interactive et collaborative dédiée au cinéma. Elle permet aux utilisateurs de consulter des informations sur des acteurs et leurs films, mais aussi de contribuer à la base de données en y ajoutant de nouveaux contenus.
+**Wiki Films** est une application web permettant aux utilisateurs de consulter des informations détaillées sur des acteurs et leurs films, et de participer à l’enrichissement de la base de données. Elle a été développée avec **Laravel** en suivant une stricte **architecture MVC**.
 
-Ce projet a été réalisé dans le cadre d’un exercice académique avec un respect strict de l’architecture **MVC (Modèle-Vue-Contrôleur)** propre à Laravel.
+Ce projet a été conçu pour répondre à des objectifs pédagogiques tout en respectant des standards professionnels de développement web.
 
 ---
 
 ## 🧠 Objectifs pédagogiques
 
-- Maîtrise de l'architecture MVC avec Laravel
-- Mise en place d'une base de données relationnelle (MySQL)
-- Gestion avancée des utilisateurs (rôles, permissions)
-- Développement d’une interface responsive (mobile & desktop)
-- Implémentation d’un système d’authentification sécurisé
+- Implémentation de l’architecture MVC avec Laravel
+- Création d’un système de rôles et permissions (Visiteur, Utilisateur, Admin)
+- Gestion sécurisée des formulaires et authentification Laravel
+- Construction d’une base de données relationnelle en MySQL
+- Interface responsive avec Blade et Bootstrap
 
 ---
 
 ## 🔧 Fonctionnalités principales
 
-### 🎥 Pour les visiteurs
-- Rechercher un acteur ou un film
-- Consulter la fiche d’un acteur (bio, filmographie)
-- Consulter les détails d’un film
+### 🎥 Visiteur (non connecté)
+- 🔍 Rechercher des acteurs ou des films
+- 👁️ Consulter la fiche d’un acteur
+- 🎬 Consulter les détails d’un film
 
-### ✍️ Pour les utilisateurs enregistrés
-- Ajouter un nouvel acteur (photo, bio, films associés)
-- Ajouter un nouveau film à un acteur existant
+### ✍️ Utilisateur enregistré (connecté)
+- ➕ Ajouter de nouveaux acteurs avec biographie et filmographie
+- ➕ Ajouter un film à un acteur existant
 
-### 🛠 Pour les administrateurs
-- Valider / modifier / supprimer des données
-- Gérer les utilisateurs (ajout, blocage, suppression)
-- Tableau de bord de modération
+### 🛠 Administrateur
+- ✅ Valider ou refuser les contenus ajoutés
+- 🗂 Gérer les utilisateurs (ajouter, modifier, supprimer)
+- 📊 Accéder à un tableau de bord de gestion
 
 ---
 
 ## 🧱 Architecture technique
 
-- **Framework** : Laravel 10
-- **Base de données** : MySQL
-- **Frontend** : Blade (avec Bootstrap)
-- **Sécurité** : Authentification Laravel, validation des formulaires, gestion de rôles
+| Composant | Stack |
+|----------|-------|
+| Backend | Laravel 10, PHP |
+| Frontend | Blade, Bootstrap |
+| Base de données | MySQL |
+| Sécurité | Authentification Laravel, rôles/permissions |
 
 ---
 
 ## 📂 Structure du projet
 
+```
+📁 app/
+📁 resources/views/
+📁 routes/web.php
+📁 database/migrations/
+📁 public/
+.env
+composer.json
+```
+
+---
+
+## 🚀 Lancer le projet en local
+
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/majoiefaya/Iarravel_streaming_website.git
+   cd Iarravel_streaming_website
+   ```
+
+2. **Installer les dépendances**
+   ```bash
+   composer install
+   npm install && npm run dev
+   ```
+
+3. **Configurer l'environnement**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Configurer la base de données**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+5. **Démarrer le serveur**
+   ```bash
+   php artisan serve
+   ```
+
+---
+
+## 👥 Accès aux rôles
+
+| Rôle | Description |
+|------|-------------|
+| Visiteur | Consultation uniquement |
+| Utilisateur | Ajout de contenu |
+| Administrateur | Gestion complète du contenu et des utilisateurs |
+
+---
+
+## 📸 Captures d’écran *(à ajouter)*
+
+- [ ] Page d’accueil
+- [ ] Fiche acteur
+- [ ] Détail film
+- [ ] Dashboard admin
+
+---
+
+## 💡 Ce que j’ai appris
+
+- Mettre en œuvre une architecture MVC dans Laravel
+- Créer un système d’authentification robuste avec rôles
+- Organiser un projet web complet de A à Z
+- Déployer une base de données relationnelle
+- Travailler avec Git en environnement versionné
+
+---
+
+## 📜 Licence
+
+Ce projet est open-source à but pédagogique.  
+Licence : **MIT**
+
+---
